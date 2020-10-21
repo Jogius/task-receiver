@@ -1,0 +1,29 @@
+{
+  "name": "task-receiver",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/",
+  "scripts": {
+    "start": "node src/",
+    "dev": "nodemon src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jogius/task-receiver.git"
+  },
+  "author": "jogius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jogius/task-receiver/issues"
+  },
+  "homepage": "https://github.com/Jogius/task-receiver#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
