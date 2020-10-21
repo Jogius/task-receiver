@@ -8,7 +8,6 @@ const upload = multer({dest: "tmp/"});
 router.post("/", upload.any(), (req, res) => {
   if (req.files) {
     for (let i = 0; i < req.files.length; i++) {
-        console.log(req.files[i]);
 //       exec(`lp tmp/${req.files[i]}`, (err, stdout, stderr) => {
 //         if (err) return res.send(`error: ${error.message}`);
 //         if (stderr) return res.send(`stderr: ${stderr}`);
@@ -19,7 +18,8 @@ router.post("/", upload.any(), (req, res) => {
   if (req.body.text) {
       console.log(req.body.text);
   }
-  console.log(req);
+  console.log(req.files);
+  console.log(req.body);
   res.send("Successful");
 });
 
